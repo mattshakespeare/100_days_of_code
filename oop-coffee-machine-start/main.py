@@ -15,8 +15,9 @@ while True:
         break
     else:
         drink = menu.find_drink(user)
-        if coffee_maker.is_resource_sufficient(drink):
-            money_machine.make_payment(drink.cost)
+        if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
+            coffee_maker.make_coffee(drink)
+                
         
         
         
