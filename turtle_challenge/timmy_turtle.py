@@ -26,6 +26,14 @@ class Turtle:
         self.tim.sety(-200)
         self.tim.setx(-200)
     
-    def paint_line(self, colour):
+    def paint_dot(self, colour):
+        
         self.tim.dot(30, colour)
+        self.tim.fd(50)
+    
+    def next_line(self):
+        y_coordinate = self.tim.ycor()
+        self.tim.sety(y_coordinate + 50)
+        self.tim.setx(-200)
+        
         
