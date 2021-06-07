@@ -26,8 +26,7 @@ class Turtle:
         self.tim.sety(-200)
         self.tim.setx(-200)
     
-    def paint_dot(self, colour):
-        
+    def paint_line_of_dots(self, colour):
         self.tim.dot(30, colour)
         self.tim.fd(50)
     

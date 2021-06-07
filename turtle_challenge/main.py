@@ -10,7 +10,7 @@ tim.starting_postion()
 for i in range(10):
     for i in range(10):
         colour = tim.generate_random_colour()
-        tim.paint_dot(colour)
+        tim.paint_line_of_dots(colour)
     tim.next_line()
 
 screen.exitonclick()
